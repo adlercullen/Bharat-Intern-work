@@ -1,0 +1,46 @@
+.Crime {
+    font-family: Arial, sans-serif;
+
+    background-image: url("Crimunal2.jpg");
+    height:100vh;
+    background-position:center;
+    background-size:cover;
+  }
+  h2 {
+    text-align: center;
+    color: beige;
+  }
+  form {
+    max-width: 500px;
+    margin: 0 auto;
+    padding-top: 140px;
+    padding-right: 900px;
+    
+  }
+  label {
+    display: block;
+    margin-bottom: 5px;
+    color:wheat;
+    font-size: large;
+  }
+  input[type="text"], input[type="date"], textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: grey;
+  }
+  input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  input[type="submit"]:hover {
+    background-color: #45a049;
+  }
