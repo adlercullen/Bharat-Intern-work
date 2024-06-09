@@ -2,9 +2,11 @@
 import './App.css';
 import Table from './Components/Table';
 import Criminal from './Components/Criminal';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 
 function App() {
+
+
 
   const sendData=async(object)=>{
     try{
@@ -32,7 +34,15 @@ function App() {
   }
 
   const [current,Set]=useState(true)
-  const [arr,newArr]=useState([{}])
+  const [arr,newArr]=useState([])
+
+  useEffect(()=>{
+    setTimeout(()=>{
+        alert("hello burger");
+    },1000);
+  },[current]);
+
+
 
   function changeReg(){
     Set(true)
@@ -43,9 +53,11 @@ function App() {
     getInfo();
     
   }
+  
 
   const CriminalsData =async(Information)=>{
     const data= await sendData(Information)
+    // const data=Information;
     console.log(data);
 
     if(data){

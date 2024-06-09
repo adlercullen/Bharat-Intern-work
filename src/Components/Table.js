@@ -32,7 +32,7 @@ const Table = (props)=>{
       </tr>
     </thead>
     <tbody>
-      {props.length===0?<p style={{color:"white"}}>No Data Exists</p>:
+      {props.criminalArray.length===0?<p style={{color:"white"}}>No Data Exists</p>:
       (array.map((data,index)=>
       <tr key={index}>
         <td>{++index}</td>
